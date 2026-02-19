@@ -1,0 +1,9 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- 보호막 생성
+local ff = Instance.new("ForceField")
+ff.Parent = character
+
+-- 지속시간 (기존 5 → 10으로 변경)
+task.wait(math.huge)
